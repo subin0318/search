@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>검색창</title>
+    <link rel="stylesheet" href="style.css">
+  
+  </head>
+  <body>
+    <p id="output">구글</p> 
+    <img id=serchimg onchange=update() src="./serchimg/google.png"> 
+    <form id="search-form">
+
+      <div class="search" onchange=update()>
+        <select id="search_select">
+            <option value="google">구글</option>
+            <option value="naver">네이버</option>
+            <option value="youtube">유튜브</option>
+            <option value="daum">다음</option>
+            <option value="coupang">쿠팡</option>
+        </select>
+        <input type="text" id="search-input" placeholder="지식을 확장하다">
+        <button type="submit" style="width: 80px; height: 80px;">serch</button>
+    </form>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
